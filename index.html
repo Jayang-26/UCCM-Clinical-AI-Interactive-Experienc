@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080e18"><title>Universal Cornea Care Mission | AI Experience</title>
+<link rel="stylesheet" href="./styles.css"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icons/icon.svg">
+</head>
+<body>
+<main class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <img src="./assets/logos/uccm_mission_logo.jpg" alt="UCCM logo">
+      <div><strong>UCCM</strong><small>UNIVERSAL CORNEA CARE MISSION</small><em>Clear sight should not depend on where you live.</em></div>
+    </div>
+  </header>
+  <section id="home-screen" class="screen">
+    <div class="hero">
+      <div class="eyebrow">ARTIFICIAL INTELLIGENCE · CORNEAL CARE</div>
+      <h1>UNIVERSAL CORNEA CARE<br><span>MISSION</span></h1>
+      <p>Advancing Corneal Care Through Artificial Intelligence</p>
+    </div>
+    <div class="section-intro"><div><h2>SELECT AN AI EXPERIENCE</h2></div></div>
+    <div class="home-grid">
+      <button class="experience-card" data-experience="infection"><img src="./assets/logos/infection_home.png" alt="AI corneal infection logo"><span><strong>AI Corneal Infection Classifier</strong><small>Explore three AI model demonstrations.</small></span><b>›</b></button>
+      <button class="experience-card" data-experience="kerato"><img src="./assets/logos/keratoconus_home.png" alt="Keratoconus logo"><span><strong>Keratoconus Progression Classifier</strong><small>Explore three progression demonstrations.</small></span><b>›</b></button>
+      <button class="experience-card" data-experience="kpop"><img src="./assets/logos/keratoplasty_home.png" alt="Keratoplasty logo"><span><strong>Keratoplasty Outcome Prediction Model</strong><small>Explore the 60-second workflow.</small></span><b>›</b></button>
+    </div>
+    <footer>UNIVERSAL CORNEA CARE MISSION <span>CLINICAL AI EXPERIENCE</span></footer>
+  </section>
+  <section id="options-screen" class="screen hidden">
+    <button class="back-button" id="options-back">← Back</button>
+    <div class="screen-heading"><img id="options-logo" src="./assets/logos/infection_home.png" alt=""><div><div id="options-eyebrow" class="eyebrow"></div><h2 id="options-title"></h2><p id="options-description"></p></div></div>
+    <div id="option-list" class="option-grid"></div>
+  </section>
+  <section id="player-screen" class="screen player-screen hidden">
+    <div class="player-toolbar"><button class="back-button" id="player-back">← Back</button><button class="fullscreen-button" id="fullscreen-button">⛶ Full screen</button></div>
+    <div class="player-meta"><span class="live-dot">● &nbsp; NOW PLAYING</span><span id="player-code"></span></div>
+    <div id="video-frame" class="video-frame"><video id="demo-video" playsinline muted preload="metadata"></video><button id="minimize-button" class="minimize-button">↙ Minimize</button><div id="video-error" class="video-error hidden"><strong>Video file not found</strong><span>Add the corresponding MP4 to the <code>videos</code> folder. The kiosk navigation and case selection are ready.</span></div></div>
+    <div class="player-caption"><strong id="player-title"></strong><span>VIDEO ENDS → RETURN TO HOME</span></div>
+  </section>
+</main>
+<script src="./config.js"></script><script src="./app.js"></script>
+</body></html>
